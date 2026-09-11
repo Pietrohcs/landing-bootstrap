@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Tailwind - Bom Companheiro</title>
+    <!-- Importando o Tailwind via Play CDN (conforme pedido no passo 14) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex items-center justify-center h-screen bg-gray-900">
+
+    <!-- 
+    RESPOSTA DO DESAFIO (PASSO 14):
+    - Qual abordagem exigiu mais classes no HTML? 
+      A abordagem utility-first (Tailwind) exige muito mais classes no HTML. Enquanto no Bootstrap usamos apenas "btn btn-primary", no Tailwind precisamos declarar cada detalhe visual separadamente (bg-orange-500, text-white, px-4, rounded, etc.).
+      
+    - Qual seria mais fácil de customizar depois? 
+      O Tailwind é mais fácil de customizar. Como não existem estilos "escondidos" amarrados a componentes genéricos, você não precisa criar um arquivo CSS extra nem brigar com a "cascata" e especificidade do CSS para sobrescrever regras, basta alterar as classes diretamente no HTML.
+    -->
+    <button class="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-4 rounded transition duration-200">
+        Ver produtos
+    </button>
+
+</body>
+</html>
