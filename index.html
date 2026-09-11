@@ -4,6 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- PASSO 13: É necessário colocar nosso CSS DEPOIS do link do Bootstrap por causa da "Cascata" do CSS. Como as regras têm o mesmo peso, a regra que for lida por último pelo navegador é a que vence o empate e é aplicada à tela. -->
+    <style>
+        .btn-hero-custom {
+            background-color: orange;
+            border-color: orange;
+            color: #ffffff;
+        }
+        .btn-hero-custom:hover {
+            background-color:darkorange;
+            border-color: darkorange;
+            color: #ffffff;
+        }
+    </style>
     <title>Bom Companheiro pet shop</title>
 </head>
 <body>
@@ -52,7 +65,7 @@
         <h1>Seu pet merece o melhor!</h1>
         <p>Produtos, cuidados e carinho para o seu melhor amigo.</p>
         <!-- O Bootstrap define 46 propriedades e variáveis CSS diferentes só para este botão. -->
-        <button class="btn btn-primary">Ver produtos</button>
+        <button class="btn btn-primary btn-hero-custom">Ver produtos</button>
     </section>
         <!-- Usei col-md-4 para que os três blocos fiquem lado a lado a partir do tamanho médio de tela e empilhem em telas menores. -->
             <div class="container text-center">
